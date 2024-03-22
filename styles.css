@@ -1,0 +1,100 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #000; /* Change background color to black */
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  margin-bottom: 20px;
+  color: #fff; /* Change text color to white */
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff; /* Change text color to white */
+  font-weight: bold;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+.featured-products {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.featured-products h2 {
+  margin-bottom: 30px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 200px;
+}
+
+.product-card h3 {
+  margin-bottom: 10px;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+}
+
+.add-to-cart-btn {
+  background-color: black;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px; /* Add this line to create space between the product details and the button */
+}
+
+.add-to-cart-btn:hover {
+  background-color: #0056b3;
+}
